@@ -21,6 +21,24 @@ a{
     max-width: 1200px;
     margin: auto;
 }
+.container1 {
+    max-width: 1200px;
+    margin: auto;
+}
+.container1  h3 {
+    text-align: start;
+    font-size: 18px;
+    font-family: var(--main-text-font);
+
+}
+.container1  p {
+    text-align: start;
+    font-size: 18px;
+    font-family: var(--main-text-font);
+    margin-top: 10px;
+
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -32,15 +50,17 @@ a{
     position: fixed;
     width: 100%;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.3); */
     transition: all 0.3s ease;
-
+    /* box-shadow: 0 0 5px 0 rgba(0,0,0,0.15); */
 }
 .top.active {
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
 }
 .top:hover {
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
 }
 
 .top-logo {
@@ -67,7 +87,25 @@ a{
     cursor: pointer;
     position: relative;
 }
+
+.top-menu-items > ul > li >a {
+    font-family: var(--main-text-font);
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
 .top-menu-items > ul > li:hover {
+    color: red;
+}
+.top-menu-items > ul > li > a:hover {
     color: red;
 }
 .top-menu-items ul li::before {
@@ -102,6 +140,7 @@ a{
     top: 60px;
     opacity: 1;
 }
+
 .top-menu-item li {
    line-height: 25px;
    display: flex;
@@ -368,7 +407,10 @@ textarea.form-control {
 }
 .btn-success {
     color: #fff;
-    background-color: #28a745;
-    border-color: #28a745;
-
+    background-color: #b93b3b;
+    border-color: #b93b3b;
+    border: none;
+    font-size: 16px;
 }
+
+
